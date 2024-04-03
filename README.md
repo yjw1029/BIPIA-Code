@@ -15,11 +15,24 @@ We introduce the first **b**enchmark of **i**ndirect **p**rompt **i**njection **
 
 
 ## Requirements
+
+### Software requirements
 Install bipia and its dependencies from source:
 ```bash
 git clone git@github.com:microsoft/BIPIA.git
 pip install .
 ```
+
+The package has been tested and verified to work on Linux: Ubuntu 20.04.6. It is recommended to use this operating system for optimal compatibility.
+
+
+### Hardware requirements
+For the evaluation of the robustness of LLMs to indirect prompt injection attacks, we recommend using a machine with the following specifications:
+1. For experiments related to API-based models (such as GPT), you can complete them on a machine without a GPU. However, you will need to set up an account's API key.
+2. For open-source models of 13B and below, our code has been tested on a machine with 2 V100 GPUs. For models larger than 13B, 4-8 V100 GPUs are required. If there are GPUs with better performance, such as A100 or H100, you can also use them to complete the experiments. Fine-tuning-based experiments are completed on a machine with 8 V100 GPUs.
+
+
+
 
 ## How to use
 We provide a simple example in [demo.ipynb](demo.ipynb) to demonstrate how to use the code to load the dataset and evaluate the robustness of LLMs to indirect prompt injection attacks.
