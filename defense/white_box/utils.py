@@ -1,4 +1,4 @@
-# Copyright (c) Microsoft Corporation.
+
 # Licensed under the MIT License.
 
 from transformers.trainer_pt_utils import LabelSmoother

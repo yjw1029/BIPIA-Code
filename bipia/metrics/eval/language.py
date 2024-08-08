@@ -1,4 +1,4 @@
-# Copyright (c) Microsoft Corporation.
+
 # Licensed under the MIT License.
 
 from langdetect import detect_langs
